@@ -16,11 +16,11 @@ public class OptionsSliderWidget extends SliderWidget {
 
     @Override
     protected void updateMessage() {
-        this.setMessage(Language.GUI_SPEED.getText((int) Math.round(this.value * 60)));
+        this.setMessage(Language.GUI_SPEED.getText((int) Math.round(this.value * 80)));
     }
 
     @Override
     protected void applyValue() {
-        this.onUpdate.accept((int) Math.round(this.value * 60));
+        this.onUpdate.accept((int) Math.round(this.value * 80));
     }
 }
