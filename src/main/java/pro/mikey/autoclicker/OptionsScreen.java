@@ -88,17 +88,17 @@ public class OptionsScreen extends Screen {
             .build()
         ), "autoclicker-fabric.gui.help.spamming");
 
-        this.sliderTooltips.put(this.addDrawableChild(new OptionsSliderWidget(x - 200, y, 130, 20, Language.GUI_SPEED.getText(), AutoClicker.leftHolding.getSpeed() / 50f, value -> {
+        this.sliderTooltips.put(this.addDrawableChild(new OptionsSliderWidget(x - 200, y, 130, 20, Language.GUI_SPEED.getText(), AutoClicker.leftHolding.getSpeed() / 80f, value -> {
             AutoClicker.leftHolding.setSpeed(value);
             AutoClicker.getInstance().saveConfig();
         })), "autoclicker-fabric.gui.help.spam-speed");
 
-        this.sliderTooltips.put(this.addDrawableChild(new OptionsSliderWidget(x - 65, y, 130, 20, Language.GUI_SPEED.getText(), AutoClicker.rightHolding.getSpeed() / 50f, value -> {
+        this.sliderTooltips.put(this.addDrawableChild(new OptionsSliderWidget(x - 65, y, 130, 20, Language.GUI_SPEED.getText(), AutoClicker.rightHolding.getSpeed() / 80f, value -> {
             AutoClicker.rightHolding.setSpeed(value);
             AutoClicker.getInstance().saveConfig();
         })), "autoclicker-fabric.gui.help.spam-speed");
 
-        this.sliderTooltips.put(this.addDrawableChild(new OptionsSliderWidget(x + 70, y, 130, 20, Language.GUI_SPEED.getText(), AutoClicker.jumpHolding.getSpeed() / 50f, value -> {
+        this.sliderTooltips.put(this.addDrawableChild(new OptionsSliderWidget(x + 70, y, 130, 20, Language.GUI_SPEED.getText(), AutoClicker.jumpHolding.getSpeed() / 80f, value -> {
             AutoClicker.jumpHolding.setSpeed(value);
             AutoClicker.getInstance().saveConfig();
         })), "autoclicker-fabric.gui.help.spam-speed");
